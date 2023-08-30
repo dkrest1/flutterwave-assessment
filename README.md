@@ -34,7 +34,10 @@ Flutterwave Bank API Assessment
 
 ## API Endpoints
 
-1. Create Account: http://localhost:3000/api/account/create
+1. Create Account:
+    
+    - live url: https://flutterwave-bank-api.onrender.com/api/account/create
+    - development url: http://localhost:3000/api/account/create 
 
     1. Request Body Example:
 
@@ -43,12 +46,18 @@ Flutterwave Bank API Assessment
     - account_type": "savings"
     - account_balance": 20
 
-2. Get Account A single Account Details: http://localhost:3000/api/account/:account_number
+2. Get Account A single Account Details: 
+
+    - live url: https://flutterwave-bank-api.onrender.com/api/account/:account_number
+    - development url: http://localhost:3000/api/account/:account_number
 
     1. Parameter Example:
 
     - account_number": 1111111111
 
-2. Get All Account Details: http://localhost:3000/api/accounts/
+3. Get All Account Details: 
+
+    - live url: https://flutterwave-bank-api.onrender.com 
+    - development url: http://localhost:3000/api/accounts/
 
 
