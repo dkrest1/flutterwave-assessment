@@ -57,7 +57,7 @@ Flutterwave Bank API Assessment
 
 3. Get All Account Details: 
 
-    - live url: https://flutterwave-bank-api.onrender.com/accounts 
+    - live url: https://flutterwave-bank-api.onrender.com/api/accounts 
     - development url: http://localhost:3000/api/accounts/
 
 
