@@ -11,9 +11,11 @@ Flutterwave Bank API Assessment
 ## Prerequisites
 
 - NodeJS (18.x)
-- Express framework
-- joi package for data validation
-- cors package for cross origin resource sharing
+- Express: Nodejs library 
+- joi: package for data validation
+- cors: package for cross origin resource sharing
+- jsonfile: package for reading and writing to JSON file
+- nodemon: for watching for changes of file for development purpose
 
 ## Getting Started
 
@@ -42,7 +44,7 @@ Flutterwave Bank API Assessment
     1. Request Body Example:
 
     - account_holder_name: "example"
-    - account_holder_dob: "12/08/2023"
+    - account_holder_dob: "2023-08-04"
     - account_type": "savings"
     - account_balance": 20
 

@@ -3,7 +3,7 @@ import Joi from "joi";
 //validate account details
 const createAccountSchema = Joi.object({
     account_holder_name: Joi.string().required(),
-    account_holder_dob: Joi.string().required(),
+    account_holder_dob: Joi.date().iso().max('now').required(),
     account_type: Joi.string().valid('savings', 'current').required(),
     account_balance: Joi.number().min(0).required()
 });
