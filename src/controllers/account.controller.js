@@ -1,8 +1,12 @@
 import { generateAccountNumber } from "../utils/generate-account.util.js";
 import jsonfile from "jsonfile"
+import path from "node:path";
 
 //path to json file for saving account details
 const ACCOUNT_DATABASE_FILE = "src/database/account-data.json"
+
+const file = path.join(process.cwd(), "/src/database/account-data.json")
+console.log(file)
 
 export  const createAccount = async (req, res) => {
     try {
@@ -70,7 +74,7 @@ export  const getAccount = async (req, res) => {
 export  const getAccounts = async(_req, res) => {
     try {
         //get saved accounts
-        const data = await jsonfile.readFile(ACCOUNT_DATABASE_FILE);
+        const data = await jsonfile.readFile(file);
 
         if(!data) {
             throw new Error("No account crated yet")
