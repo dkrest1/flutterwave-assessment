@@ -6,7 +6,7 @@ import path from "node:path";
 const ACCOUNT_DATABASE_FILE = "src/database/account-data.json"
 
 const file = path.join(process.cwd(), "/src/database/account-data.json")
-console.log(file)
+console.log(process.cwd())
 
 export  const createAccount = async (req, res) => {
     try {
