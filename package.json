@@ -4,6 +4,9 @@
   "description": "Flutterwave Bank API Assessment",
   "main": "index.js",
   "type": "module",
+  "engines": {
+    "node": ">=16 <=18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
