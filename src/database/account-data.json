@@ -5,5 +5,12 @@
     "account_type": "savings",
     "account_balance": 0,
     "account_number": 5810733290
+  },
+  {
+    "account_holder_name": "Oluwatosin Akande",
+    "account_holder_dob": "2000-04-04",
+    "account_type": "savings",
+    "account_balance": 0,
+    "account_number": 4999487494
   }
 ]
