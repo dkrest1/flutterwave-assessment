@@ -3,10 +3,7 @@ import jsonfile from "jsonfile"
 import path from "node:path";
 
 //path to json file for saving account details
-const ACCOUNT_DATABASE_FILE = "src/database/account-data.json"
-
-const file = path.join(process.cwd(), "/src/database/account-data.json")
-console.log(process.cwd())
+const ACCOUNT_DATABASE_FILE = path.join(process.cwd(), "/src/database/account-data.json")
 
 export  const createAccount = async (req, res) => {
     try {
@@ -74,7 +71,7 @@ export  const getAccount = async (req, res) => {
 export  const getAccounts = async(_req, res) => {
     try {
         //get saved accounts
-        const data = await jsonfile.readFile(file);
+        const data = await jsonfile.readFile(ACCOUNT_DATABASE_FILE);
 
         if(!data) {
             throw new Error("No account crated yet")
